@@ -9,7 +9,7 @@ import { Client, neon } from "@neondatabase/serverless";
 
 import type { DatabaseSession } from "../utils";
 import type { Adapter, InitializeAdapter, UserSchema, KeySchema } from "lucia";
-import type { DatabaseError, NeonQueryFunction, QueryResultRow } from "@neondatabase/serverless";
+import type { DatabaseError, QueryResultRow } from "@neondatabase/serverless";
 type TableWithSession = { user: string, session: string, key: string };
 type TableWithoutSession = { user: string, key: string };
 type Tables = TableWithSession | TableWithoutSession;
